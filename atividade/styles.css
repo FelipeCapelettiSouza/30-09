@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e9ecef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button, input {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button {
+    background-color: #007bff; /* Azul */
+    color: white;
+}
+
+button:hover {
+    background-color: #0056b3; /* Azul escuro */
+    transform: scale(1.05); /* Aumento ao passar o mouse */
+}
+
+input {
+    border: 1px solid #ced4da;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    border-color: #007bff; /* Azul ao focar */
+}
+
+.resultado {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #333;
+    opacity: 0; /* Iniciar invisível */
+    transition: opacity 0.5s ease;
+}
+
+.resultado.visible {
+    opacity: 1; /* Tornar visível */
+}

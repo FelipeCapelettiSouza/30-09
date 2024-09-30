@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos em JavaScript</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <button id="btnOnClick" onclick="handleClick()">Clique Aqui</button>
+        <button id="btnOnMouseOver" onmouseover="handleMouseOver()">Passe o mouse aqui</button>
+        <button id="btnOnMouseOut" onmouseout="handleMouseOut()">Saia do mouse aqui</button>
+        <input type="text" id="inputOnChange" onchange="handleChange()" placeholder="Digite algo e saia">
+        <input type="text" id="inputOnKeyDown" onkeydown="handleKeyDown()" placeholder="Pressione uma tecla">
+    </div>
+    
+    <p id="mensagem" class="resultado"></p>
+
+    <script src="app.js"></script>
+</body>
+</html>
